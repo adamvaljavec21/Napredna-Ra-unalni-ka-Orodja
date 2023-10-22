@@ -21,6 +21,10 @@ function [pi_priblizek, odstopanje] = calc_pi(stevilo_tock)
     scatter(izven_kroga(:,1), izven_kroga(:,2), 'r', 'filled'); % Točke izven kroga so rdeče
     plot(kroznica_tocke(1, :), kroznica_tocke(2, :), 'green', 'LineWidth', 5);
     axis equal;
+    title('Računanje približka števila pi');
+    legend({'Točke v krogu', 'Točke zunaj kroga', 'Krožnica'});
+    xlabel('X os');
+    ylabel('Y os');
     
     % Prikaz rezultatov
     fprintf('Približek za pi: %.6f\n', pi_priblizek);
